@@ -1,0 +1,34 @@
+{
+    "name": "larva/laravel-cdn",
+    "description": "CDN extension for Laravel.",
+    "keywords": [
+        "Larva",
+        "laravel",
+        "cdn"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "illuminate/support": "^5.1 || ^6.0 || ^7.0 || ^8.0",
+        "larva/support": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Larva\\Cdn\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Larva\\Cdn\\CdnServiceProvider"
+            ],
+            "aliases": {
+                "Cdn": "Larva\\Cdn\\Cdn"
+            }
+        }
+    },
+    "prefer-stable": true
+}
